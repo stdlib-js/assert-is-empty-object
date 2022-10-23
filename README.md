@@ -72,6 +72,7 @@ var bool = isEmptyObject( {} );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var Object = require( '@stdlib/object-ctor' );
 var isEmptyObject = require( '@stdlib/assert-is-empty-object' );
 
 var bool = isEmptyObject( {} );
