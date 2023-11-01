@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,68 +16,18 @@
 * limitations under the License.
 */
 
-/* eslint-disable no-new-object, object-curly-newline  */
-
 'use strict';
 
 // MODULES //
 
 var tape = require( 'tape' );
-var Symbol = require( '@stdlib/symbol-ctor' );
-var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
-var isEmptyObject = require( './../../dist' );
-
-
-// VARIABLES //
-
-var opts = {
-	'skip': !hasSymbolSupport()
-};
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isEmptyObject, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided an empty object', function test( t ) {
-	t.strictEqual( isEmptyObject( {} ), true, 'returns true' );
-	t.strictEqual( isEmptyObject( new Object() ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided an empty object', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{ 'beep': 'boop' },
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isEmptyObject( values[i] ), false, 'returns false for when provided ' + values[i] );
-	}
-	t.end();
-});
-
-tape( 'the function returns `false` if provided an object with symbol property keys', opts, function test( t ) {
-	var sym = Symbol( 'foo' );
-	var obj = {};
-
-	obj[ sym ] = true;
-	t.strictEqual( isEmptyObject( obj ), false, 'returns false' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
