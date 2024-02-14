@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-empty-object/tags). For example,
+
+```javascript
 import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@v0.2.0-deno/mod.js';
 ```
 
@@ -68,7 +73,7 @@ var bool = isEmptyObject( {} );
 
 ```javascript
 import Object from 'https://cdn.jsdelivr.net/gh/stdlib-js/object-ctor@deno/mod.js';
-import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@v0.2.0-deno/mod.js';
+import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@deno/mod.js';
 
 var bool = isEmptyObject( {} );
 // returns true
