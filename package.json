@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-empty-object",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Test if a value is an empty object.",
   "license": "Apache-2.0",
   "author": {
@@ -37,18 +37,18 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-symbol-support": "^0.2.1",
-    "@stdlib/assert-is-plain-object": "^0.2.1",
-    "@stdlib/utils-keys": "^0.2.1"
+    "@stdlib/assert-has-symbol-support": "^0.2.2",
+    "@stdlib/assert-is-plain-object": "^0.2.2",
+    "@stdlib/utils-keys": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.2.1",
+    "@stdlib/assert-is-boolean": "^0.2.2",
     "@stdlib/object-ctor": "^0.2.1",
-    "@stdlib/symbol-ctor": "^0.2.1",
+    "@stdlib/symbol-ctor": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",
