@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@deno/mod.js';
+import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@v0.2.4-deno/mod.js';
 ```
 
 #### isEmptyObject( value )
@@ -68,7 +68,7 @@ var bool = isEmptyObject( {} );
 
 ```javascript
 import Object from 'https://cdn.jsdelivr.net/gh/stdlib-js/object-ctor@deno/mod.js';
-import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@deno/mod.js';
+import isEmptyObject from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-empty-object@v0.2.4-deno/mod.js';
 
 var bool = isEmptyObject( {} );
 // returns true
